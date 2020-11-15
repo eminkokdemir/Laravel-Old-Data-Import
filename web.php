@@ -23,7 +23,7 @@ Route::get("db_seeder",function (){
         }
     }
     $report = "";
-    $report .= "Toplam tablo sayısı ".count($report_tables).". Toplam satır sayısı ".$row_count.".<br>";
+    $report .= "Total number of tables ".count($report_tables).". Total number of rows ".$row_count.".<br>";
     foreach ($report_tables as $key => $value) {
         $report .= $key." = ".$value."<br>";
     }
